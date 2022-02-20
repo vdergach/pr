@@ -18,5 +18,6 @@ public class OpenWebPage {
         Assert.assertEquals(webSiteName.getText(),"It Works!");
         driver.quit();
         System.out.println("test");
+        System.out.println("test");
     }
 }
