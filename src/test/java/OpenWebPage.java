@@ -17,5 +17,6 @@ public class OpenWebPage {
         WebElement webSiteName = driver.findElement(By.xpath("/html/body/div[7]/div/div[10]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/a/h3"));
         Assert.assertEquals(webSiteName.getText(),"It Works!");
         driver.quit();
+        System.out.println("test");
     }
 }
