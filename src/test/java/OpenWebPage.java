@@ -11,7 +11,16 @@ public class OpenWebPage {
 
         driver.get("http://www.google.com/");
         driver.manage().window().maximize();
-
+//123
+        WebElement searchBox = driver.findElement(By.name("q"));
+        Thread.sleep(2000);
+        searchBox.sendKeys("It Works!!!");
+        searchBox.submit();
+        Thread.sleep(2000);
+        WebElement webSiteName = driver.findElement(By.xpath("/html/body/div[7]/div/div[10]/div/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div/a/h3"));
+        Thread.sleep(2000);
+        Assert.assertEquals(webSiteName.getText(),"It Works!");
+//123
         driver.quit();
     }
 }
